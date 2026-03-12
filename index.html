@@ -1,240 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DB | Data Engineer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhineshbabu S - Data Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: #020617;
-      color: #e5e7eb;
-      line-height: 1.7;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      background: radial-gradient(circle at top, #1e3a8a, #020617 70%);
-      padding: 40px 20px;
+      margin-bottom: 20px;
     }
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      margin: 0;
+      font-size: 2em;
     }
-    header h1 span {
-      color: #60a5fa;
-    }
-    header p {
-      max-width: 600px;
-      margin: 0 auto 25px;
-      color: #cbd5f5;
-      font-size: 1.1rem;
-    }
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: #fff;
-      padding: 14px 26px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      margin: 5px;
-    }
-    .btn.secondary {
-      background: transparent;
-      border: 1px solid #2563eb;
-      color: #93c5fd;
-    }
-    .btn:hover {
-      opacity: 0.9;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      background: rgba(2,6,23,0.8);
-      backdrop-filter: blur(10px);
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      padding: 14px;
-      z-index: 10;
-    }
-    nav a {
-      color: #93c5fd;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      color: #fff;
+    header h2 {
+      margin: 0;
+      font-weight: normal;
+      color: #555;
     }
     section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 20px;
+      margin-bottom: 25px;
     }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #e0e7ff;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-    }
-    .card {
-      background: linear-gradient(180deg, #020617, #020617);
-      border: 1px solid #1e293b;
-      padding: 28px;
-      border-radius: 16px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #60a5fa;
+    h3 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      color: #444;
     }
     ul {
-      padding-left: 18px;
+      list-style: none;
+      padding: 0;
     }
-    .timeline {
-      border-left: 2px solid #1e40af;
-      padding-left: 30px;
+    ul li {
+      margin: 5px 0;
     }
-    .timeline-item {
-      margin-bottom: 30px;
+    .icons i {
+      margin-right: 8px;
+      color: #007acc;
     }
-    .timeline-item span {
-      font-size: 0.9rem;
-      color: #94a3b8;
-    }
-    footer {
-      background: #020617;
-      border-top: 1px solid #1e293b;
+    .contact-info {
       text-align: center;
-      padding: 30px 20px;
-      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+    .contact-info a {
+      color: #007acc;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div>
-      <h1>Hi, I'm <span>Dhineshbabu S</span></h1>
-      <p>
-        A Data Engineer passionate about building scalable pipelines,
-        transforming raw data into insights, and designing reliable data platforms.
-      </p>
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
-    </div>
+    <h1>Dhineshbabu S</h1>
+    <h2>Data Engineer</h2>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="contact-info">
+    <p><i class="fas fa-phone"></i> +91 9080532486</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:idb212001@gmail.com">idb212001@gmail.com</a></p>
+    <p><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/idb21">linkedin.com/in/idb21</a></p>
+  </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a Data Engineer with hands-on experience in building end-to-end
-      data solutions. From ingesting raw data to serving analytics-ready
-      datasets, I enjoy solving complex data problems with simple, scalable designs.
-    </p>
+  <section>
+    <h3><i class="fas fa-user"></i> Professional Summary</h3>
+    <p>Certified Data Engineer with 3+ years of experience owning end-to-end cloud-native data platforms on GCP. Skilled in designing ETL pipelines, orchestrating workflows with Airflow, and building analytical schemas for large-scale data ingestion and transformation.</p>
   </section>
 
-  <section id="skills">
-    <h2>Skills & Tools</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Languages</h3>
-        <ul>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>Bash</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Data & Streaming</h3>
-        <ul>
-          <li>Spark</li>
-          <li>Kafka</li>
-          <li>Airflow</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Cloud & DevOps</h3>
-        <ul>
-          <li>AWS / Azure / GCP</li>
-          <li>Docker</li>
-          <li>CI/CD</li>
-        </ul>
-      </div>
-    </div>
+  <section>
+    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+    <p>Bachelor of Engineering - Electronics and Communication Engineering<br>
+    Bannari Amman Institute of Technology | CGPA: 9.07</p>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Senior Data Engineer</h3>
-        <span>2023 – Present</span>
-        <p>
-          Designing scalable data pipelines, optimizing warehouse performance,
-          and mentoring junior engineers.
-        </p>
-      </div>
-      <div class="timeline-item">
-        <h3>Data Engineer</h3>
-        <span>2020 – 2023</span>
-        <p>
-          Built batch and streaming ETL pipelines and supported analytics teams
-          with clean, reliable datasets.
-        </p>
-      </div>
-    </div>
+  <section>
+    <h3><i class="fas fa-certificate"></i> Certifications & Achievements</h3>
+    <ul>
+      <li><i class="fas fa-cloud"></i> Google Cloud Certified - Associate Cloud Engineer</li>
+      <li><i class="fas fa-code"></i> Programming in Java - NPTEL (Elite, 73%)</li>
+      <li><i class="fas fa-project-diagram"></i> Astronomer Certification - Apache Airflow 3 Fundamentals</li>
+      <li><i class="fas fa-award"></i> Ford Employee Excellence Award</li>
+    </ul>
   </section>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Real-Time Analytics Platform</h3>
-        <p>Kafka + Spark pipeline processing millions of events daily.</p>
-      </div>
-      <div class="card">
-        <h3>Cloud Data Warehouse</h3>
-        <p>Designed a scalable warehouse powering BI dashboards.</p>
-      </div>
-      <div class="card">
-        <h3>Workflow Automation</h3>
-        <p>Automated data pipelines using Airflow and Python.</p>
-      </div>
-    </div>
+  <section>
+    <h3><i class="fas fa-tools"></i> Skills</h3>
+    <ul class="icons">
+      <li><i class="fas fa-code"></i> Python (Pandas, Numpy, Seaborn), Terraform, PySpark</li>
+      <li><i class="fas fa-database"></i> MySQL, RDBMS</li>
+      <li><i class="fas fa-cloud"></i> Google Cloud Platform (BigQuery, Dataflow, Pub/Sub, Cloud Run)</li>
+      <li><i class="fas fa-random"></i> ETL/ELT Tools: Qlik, Alteryx, Databricks</li>
+      <li><i class="fas fa-stream"></i> Orchestration: Apache Airflow, Autosys</li>
+      <li><i class="fab fa-docker"></i> Docker, GitHub</li>
+      <li><i class="fas fa-users"></i> Leadership, Problem Solving, Team Collaboration</li>
+    </ul>
   </section>
 
-  <section id="contact">
-    <h2>Get In Touch</h2>
-    <p>Email: idb212001@email.com</p>
-    <p>LinkedIn: linkedin.com/in/idb21/</p>
-    <p>GitHub: github.com/sdb2109</p>
+  <section>
+    <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+    <p><strong>Data Engineer | Ford Credit GTBC (DVD) - Chennai, India | Jan 2023 - Present</strong></p>
+    <ul class="icons">
+      <li><i class="fas fa-database"></i> Ingested legacy systems (Mainframe, Teradata, Oracle, DB2) into GCP BigQuery.</li>
+      <li><i class="fas fa-project-diagram"></i> Built Airflow pipelines with Cloud Run, Pub/Sub, and GCS.</li>
+      <li><i class="fas fa-sync-alt"></i> Migrated systems using Qlik Replicate with CDC and full-load tasks.</li>
+      <li><i class="fas fa-table"></i> Designed analytical schemas and reusable mart tables.</li>
+      <li><i class="fas fa-lock"></i> Implemented PII/SPII governance programs via Dataplex.</li>
+    </ul>
   </section>
-
-  <footer>
-    © 2026 DB · Data Engineer Portfolio
-  </footer>
-
 </body>
 </html>
